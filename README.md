@@ -8,7 +8,7 @@ A BPnetwork in C++
 ## How to prepare data file
 - Firstly, the source data file should be .csv file
 - Then the data structure in source file shows below:
-![Alt text](./1544231024609.png)
+![Alt text](./1.png)
 The first row is the name of each factor
 The first column is the Date of each input series. The date data will be saved as timestamp in the program.
 The end of n columns are data series of output nodes. The n is the number of output nodes and set as 1 as default.
@@ -19,24 +19,24 @@ Series do not need data normalization as the program will do it for users.
 
 ## How to use our program
 - Firstly you should select a function in the main manual. 
-- ![Alt text](./1544231566977.png)
+- ![Alt text](./2.png)
 - Then you should generate a net first, otherwise you will not be able to use other functions of our program except quit function.
-- ![Alt text](./1544231635662.png)
+- ![Alt text](./3.png)
 - Then you need to enter these parameters: error tolerance, learning rate of both input and output, maximum training cycles and hidden layers' information
-- ![Alt text](./1544231746268.png)
+- ![Alt text](./4.png)
 - After you entered all parameters, you can select different part of your source data to train your network. And the training process will start automatically. 
-- ![Alt text](./1544231875845.png)
+- ![Alt text](./5.png)
 - The error of every single training cycle will shows until training end. 
 - Then you can test your model by selecting a test set from your data source:
-- ![Alt text](./1544231975178.png)
+- ![Alt text](./5.png)
 - The program will show the prediction results as well as actual results for you.
 - You can save the whole net, the default name of output file is BP_Network_Bias.txt and BP_Network_Weight.txt.
 
 - If you are not satisfied with your prediction result, you can modify your net by enter different parameters in function 5.
-- ![Alt text](./1544232138924.png)
+- ![Alt text](./7.png)
 - After you entered all your new parameters, the program will automatically renew the net. You only need to train the model again and test again.
 
 ## How to get your output
 The saved net will be named as BP_Network_Bias.txt and BP_Network_Weight.txt.
 The prediction results will show in the console:
-![Alt text](./1544232280689.png)
+![Alt text](./6.png)
